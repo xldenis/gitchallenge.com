@@ -142,7 +142,7 @@ module.controller('ToolCtrl', function($scope, APIService) {
              ng-show='currentIssue==null || currentIssue == issue'>
             <br />
             <div class="col-md-12">
-                <h2 class="no-clear">{{issue.title}}</h2>
+                <a href="{{issue.url}}"class="no-clear">{{issue.title}}</a>
             </div>
             <div class="col-md-1">
                 <img ng-src="{{ issue.user.avatar_url }}" class="gravatar" />
